@@ -19,8 +19,12 @@ public class Proyectil : MonoBehaviour
             Destroy(collision.gameObject);
             contadorNave++;
 
-            sonidoExplosion.Play();
+            
         }
-        
+        if (collision.gameObject.CompareTag("Nave"))
+        {
+            SceneManager.LoadScene("Salida");
+        }
+
     }
 }

@@ -68,7 +68,9 @@ public class NaveJugador : MonoBehaviour
             
         }
 
+       
     }
 
+    
 }
 

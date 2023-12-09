@@ -13,6 +13,8 @@ public class NaveEnemiga : MonoBehaviour
     public float spawnInterval = 1.0f;
     public AudioSource sonidoExplosion;
 
+   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,7 @@ public class NaveEnemiga : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
    
     void naveAleatoria()
@@ -47,7 +49,11 @@ public class NaveEnemiga : MonoBehaviour
         naveInstancia.transform.position = new Vector3(naveInstancia.transform.position.x, naveInstancia.transform.position.y, 0);
 
         naveInstancia.transform.rotation = Quaternion.Euler(0, 0, 180);
-    }
 
+        
+    }
    
+
 }
+   
+
